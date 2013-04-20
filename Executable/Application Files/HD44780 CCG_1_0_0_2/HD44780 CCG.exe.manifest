@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="HD44780 CCG.exe" version="1.0.0.2" publicKeyToken="429361b6e6f3aecf" language="en" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Hi.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="HD44780 CCG" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="HD44780 CCG.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HD44780 CCG.exe" size="49664">
+      <assemblyIdentity name="HD44780 CCG" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>BJAdT5uGOjGykJAFBWW/FHVyzv4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CCG.ico" size="14118">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zWeyY2HUU7DfLIB/JCZvm5e52aM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Hi.ico" size="4678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZfMXmxs1YC4Hb0sIXZiIFf8uMbg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="LCD_CCG.ico" size="6742">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ycaSY/EMFqT3pD7wxN0hZT/1auw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Electro-TOSH\Electro" issuerKeyHash="4c2408cce33268f5b84ae953c396fdb618ddcefa" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>pjOAvKj8RU3viFhFGxGebyBw3Gg=</DigestValue></Reference></SignedInfo><SignatureValue>U4kBVuZUTsnDo+4vV+BbBsREwvpujLO10eLfXB3oaQHjYpWzFzTzoJJIhiQikOzNOyuFPcVwj6utA1AbvvoNGbljIvmXLVIANRKT82IpbjLSi6qvoNveVCxTu3TZE7LZ0EJQ87He2PYI9EosVfYRkpYCYi1oz+28B6JCNL8z4HU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qstInZ5+n63ePJZA6CdFYnxVH+BhtRx7NiZ1+IobnGJsGU81xCRRm5Q7ruN8rCvy/bBw2E96au6wDJF8ZuvfMp9H3Zn17RI5axIaNUDMxuuG8nK5mFYZuopDEocWHscDAj1StaNh24jNluLjIMwSiVFb8u+D0NgqVRUT/BNfEz8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="68dc70206f9e111b455888ef4d45fca8bc8033a6" Description="" Url=""><as:assemblyIdentity name="HD44780 CCG.exe" version="1.0.0.2" publicKeyToken="429361b6e6f3aecf" language="en" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Electro-TOSH\Electro</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>TGzk7RFJKi35d8EgKq1dYtkjRbQ=</DigestValue></Reference></SignedInfo><SignatureValue>XmCNN7D/eE80rNx2+CQi3uAqvWlHRmx/yf5PMgalDcUictPjNw+GhzsAc0s5lILYSMyimAc+uaR2CFYEHU0DzbrgcowyTXyLJ1H1CehrFUnN70bhdiW8rzCcBkMFxfyAdl1mhKrDM92KPXwXuoi58YYqNJ8jBHCpu7d5WymVMS8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qstInZ5+n63ePJZA6CdFYnxVH+BhtRx7NiZ1+IobnGJsGU81xCRRm5Q7ruN8rCvy/bBw2E96au6wDJF8ZuvfMp9H3Zn17RI5axIaNUDMxuuG8nK5mFYZuopDEocWHscDAj1StaNh24jNluLjIMwSiVFb8u+D0NgqVRUT/BNfEz8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQe/vEl9Z4iq5E0UztkWZrHzANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigARQBsAGUAYwB0AHIAbwAtAFQATwBTAEgAXABFAGwAZQBjAHQAcgBvMB4XDTEyMDQyNzA3MDIxMFoXDTEzMDQyNzEzMDIxMFowMzExMC8GA1UEAx4oAEUAbABlAGMAdAByAG8ALQBUAE8AUwBIAFwARQBsAGUAYwB0AHIAbzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAqstInZ5+n63ePJZA6CdFYnxVH+BhtRx7NiZ1+IobnGJsGU81xCRRm5Q7ruN8rCvy/bBw2E96au6wDJF8ZuvfMp9H3Zn17RI5axIaNUDMxuuG8nK5mFYZuopDEocWHscDAj1StaNh24jNluLjIMwSiVFb8u+D0NgqVRUT/BNfEz8CAwEAATANBgkqhkiG9w0BAQUFAAOBgQCKE7bXQLmZZFyhZgXwmOzz6YSigxhHS3+8cMUd84igMkM0uRDOjGDT+er1xGNULKJj6oQPWT6zPw7MFTjxmkUhTaB9hN2DF9+Emoz3iZo6b1qnzKiWJcT41bGfcoAPMmj7ctUc5IaaY9b8670cgIJUU/pThnpoDGNGbCAC0WDRug==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
